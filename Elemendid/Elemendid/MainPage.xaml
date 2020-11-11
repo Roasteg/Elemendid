@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Elemendid.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Picker x:Name="Maakond"
+                PropertyChanged="Maakond_PropertyChanged"
+                HorizontalOptions="Start"
+                VerticalOptions="StartAndExpand"
+                HeightRequest="100"
+                WidthRequest="200"
+             
+                />
+            <Picker x:Name="Pealinn"
+                PropertyChanged="Pealinn_PropertyChanged"
+                HorizontalOptions="End"
+                VerticalOptions="StartAndExpand"
+                WidthRequest="200"
+                HeightRequest="100"
+                />
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="pic"
+                   
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   />
+            <Entry x:Name="nfo"
+                   IsEnabled="True"
+                   IsReadOnly="True"
+                   Text=""
+                   />
+        </StackLayout>
+    </StackLayout>
+    
+
+
+</ContentPage>
